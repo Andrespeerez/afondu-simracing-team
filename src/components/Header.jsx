@@ -1,6 +1,6 @@
 export default function Header () {
     return (
-        <header className="p-10 py-[10px] fixed w-full flex justify-around items-center bg-black border-b-1 border-[#222222]">
+        <header className="p-10 py-2.5 sticky top-0 w-full flex justify-around items-center bg-black border-b border-[#222222] z-[9999]">
             <a href="/" className="flex items-center">
                 <img src="/logo-afondu.webp" alt="Logo de Afondu" 
                 className="rounded-full" width="80" height="80" />

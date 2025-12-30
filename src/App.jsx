@@ -6,10 +6,10 @@ import MediaSection from './components/MediaSection'
 
 export default function App() {
   return (
-    <div className="text-white">
+    <div className="flex flex-col text-slate-100">
       <Header />
 
-      <main>
+      <main className=''>
         <BannerSection /> 
      
         <EquipoSection />
@@ -18,7 +18,7 @@ export default function App() {
 
 
       </main>
-      
+
     </div>
   )
 }

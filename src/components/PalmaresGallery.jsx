@@ -13,7 +13,7 @@ export default function PalmaresGallery() {
 
     return (
         <div
-        className='text-2xl span-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 2xl:grid-cols-2 gap-4'
+        className='text-2xl span-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 2xl:grid-cols-2 gap-4 relative z-0'
         >
             {palmaresList.map((elem, index) => (
                 <PalmaresItem titulo={elem.title} anyos={elem.years} img={elem.img} key={index}/>
