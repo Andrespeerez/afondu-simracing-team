@@ -3,7 +3,7 @@ export default function BannerSection() {
         <section
         className='flex items-center flex-col gap-20 bg-black h-dvh justify-center shadow-2xl'
         >
-          <img src="\src\assets\log_casco_relieve_negro.webp" alt="Logo de Afondu" 
+          <img src="/log_casco_relieve_negro.webp" alt="Logo de Afondu" 
           className="" width="400" height="400"
           />
 

@@ -3,13 +3,13 @@ import GalleryItem from "./GalleryItem";
 
 export default function Gallery() {
     const galeriaList = [
-        "/src/assets/gallery/1.webp",
-        "/src/assets/gallery/2.webp",
-        "/src/assets/gallery/3.webp",
-        "/src/assets/gallery/5.webp",
-        "/src/assets/gallery/6.webp",
-        "/src/assets/gallery/7.webp",        
-        "/src/assets/gallery/8.webp",
+        "/gallery/1.webp",
+        "/gallery/2.webp",
+        "/gallery/3.webp",
+        "/gallery/5.webp",
+        "/gallery/6.webp",
+        "/gallery/7.webp",        
+        "/gallery/8.webp",
     ];
 
     const [selectedImage, setSelectedImage] = useState(null);
@@ -21,7 +21,9 @@ export default function Gallery() {
             >
                 <h3
                 className='pb-2 border-b border-red-500'
-                >GALERÍA</h3>
+                >
+                    GALERÍA
+                </h3>
             </header>
 
             <div
