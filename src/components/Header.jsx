@@ -17,6 +17,7 @@ export default function Header () {
             <button
             onClick={toggleMenu}
             className="lg:hidden text-white p-2 focus:outline-none"
+            aria-label="Abrir menú"
             >
                 <div className="w-6 h-5 flex flex-col justify-between">
                     <span className={`h-1 w-full bg-red-600 transition-all ${isOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
@@ -26,7 +27,7 @@ export default function Header () {
             </button>
 
             <div className={`
-                fixed top-[72px] left-0 w-full bg-black border-b border-white/10 transition-all duration-300 lg:hidden
+                fixed top-18 left-0 w-full bg-black border-b border-white/10 transition-all duration-300 lg:hidden
                 ${isOpen ? 'opacity-100 visible h-auto' : 'opacity-0 invisible h-0'}
                 `}>
                 <ul className="flex flex-col items-center gap-6 py-8 font-bold italic">

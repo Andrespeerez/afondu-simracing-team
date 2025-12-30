@@ -6,6 +6,7 @@ export default function BannerSection() {
           <img src="/log_casco_relieve_negro.webp" alt="Logo de Afondu" 
           className="" width="400" height="400"
           loading="eager"
+          fetchPriority="high"
           />
 
           <p
