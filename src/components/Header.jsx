@@ -1,13 +1,48 @@
+import { useState } from "react"
+import RedesSociales from "./RedesSociales";
+
 export default function Header () {
+    const [isOpen, setIsOpen] = useState(false)
+    function toggleMenu() {
+        setIsOpen(!isOpen);
+    }
+
     return (
-        <header className="p-10 py-2.5 sticky top-0 w-full flex justify-around items-center bg-black border-b border-[#222222] z-[9999]">
+        <header className="p-10 py-2.5 sticky top-0 w-full flex lg:justify-around justify-between items-center bg-black border-b border-[#222222] z-[9999]">
             <a href="/" className="flex items-center">
                 <img src="/logo-afondu.webp" alt="Logo de Afondu" 
                 className="rounded-full" width="80" height="80" />
             </a>
             
+            <button
+            onClick={toggleMenu}
+            className="lg:hidden text-white p-2 focus:outline-none"
+            >
+                <div className="w-6 h-5 flex flex-col justify-between">
+                    <span className={`h-1 w-full bg-red-600 transition-all ${isOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
+                    <span className={`h-1 w-full bg-red-600 transition-all ${isOpen ? 'opacity-0' : ''}`}></span>
+                    <span className={`h-1 w-full bg-red-600 transition-all ${-isOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
+                </div>
+            </button>
 
-            <nav className="flex flex-row gap-10 text-white text-xl font-semibold justify-center">
+            <div className={`
+                fixed top-[72px] left-0 w-full bg-black border-b border-white/10 transition-all duration-300 lg:hidden
+                ${isOpen ? 'opacity-100 visible h-auto' : 'opacity-0 invisible h-0'}
+                `}>
+                <ul className="flex flex-col items-center gap-6 py-8 font-bold italic">
+                    <li><a href="#" onClick={toggleMenu}>INICIO</a></li>
+                    <li><a href="#equipo" onClick={toggleMenu}>EQUIPO</a></li>
+                    <li><a href="#media" onClick={toggleMenu}>MEDIA</a></li>
+                    <li><a href="#contacto" onClick={toggleMenu}>CONTACTO</a></li>
+                    <li 
+                    className="p-2"
+                    >
+                        <RedesSociales />
+                    </li>
+                </ul>
+            </div>
+
+            <nav className="hidden lg:flex gap-8 text-white text-xl font-semibold justify-center">
                 <div>
                     <a href="#"
                     className="text-red-500 text-lg border-b-2 border-red-500 pb-1">
@@ -34,34 +69,12 @@ export default function Header () {
                 </div>
             </nav>
 
-            <div className="flex gap-8 items-center justify-between">
+            <div className="hidden lg:flex gap-8 items-center justify-between">
                 <button
                 className="border border-red-500 text-red-500 p-3 rounded-md font-bold text-lg hover:bg-red-500 hover:text-slate-900 transition hover:scale-105">
                     CONTACTO
                 </button>
-                <div className="flex gap-5 items-center justify-between text-slate-600">
-                    <a href=""
-                    className="hover:text-slate-400 hover:scale-105"
-                    target="_blank"
-                    >
-                        <svg width="40px" viewBox="0 -28.5 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg"  preserveAspectRatio="xMidYMid">
-                            <g>
-                                <path d="M216.856339,16.5966031 C200.285002,8.84328665 182.566144,3.2084988 164.041564,0 C161.766523,4.11318106 159.108624,9.64549908 157.276099,14.0464379 C137.583995,11.0849896 118.072967,11.0849896 98.7430163,14.0464379 C96.9108417,9.64549908 94.1925838,4.11318106 91.8971895,0 C73.3526068,3.2084988 55.6133949,8.86399117 39.0420583,16.6376612 C5.61752293,67.146514 -3.4433191,116.400813 1.08711069,164.955721 C23.2560196,181.510915 44.7403634,191.567697 65.8621325,198.148576 C71.0772151,190.971126 75.7283628,183.341335 79.7352139,175.300261 C72.104019,172.400575 64.7949724,168.822202 57.8887866,164.667963 C59.7209612,163.310589 61.5131304,161.891452 63.2445898,160.431257 C105.36741,180.133187 151.134928,180.133187 192.754523,160.431257 C194.506336,161.891452 196.298154,163.310589 198.110326,164.667963 C191.183787,168.842556 183.854737,172.420929 176.223542,175.320965 C180.230393,183.341335 184.861538,190.991831 190.096624,198.16893 C211.238746,191.588051 232.743023,181.531619 254.911949,164.955721 C260.227747,108.668201 245.831087,59.8662432 216.856339,16.5966031 Z M85.4738752,135.09489 C72.8290281,135.09489 62.4592217,123.290155 62.4592217,108.914901 C62.4592217,94.5396472 72.607595,82.7145587 85.4738752,82.7145587 C98.3405064,82.7145587 108.709962,94.5189427 108.488529,108.914901 C108.508531,123.290155 98.3405064,135.09489 85.4738752,135.09489 Z M170.525237,135.09489 C157.88039,135.09489 147.510584,123.290155 147.510584,108.914901 C147.510584,94.5396472 157.658606,82.7145587 170.525237,82.7145587 C183.391518,82.7145587 193.761324,94.5189427 193.539891,108.914901 C193.539891,123.290155 183.391518,135.09489 170.525237,135.09489 Z" fill="currentColor" fillRule="nonzero">
-                                </path>
-                            </g>
-                        </svg>  
-                    </a>
-                    <a href="https://www.instagram.com/afondu_simracing/"
-                    className="hover:text-slate-400 hover:scale-105"
-                    target="_blank"
-                    >
-                        <svg width="40px" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fillRule="evenodd" clipRule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="currentColor"/>
-                            <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="currentColor"/>
-                            <path fillRule="evenodd" clipRule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="currentColor"/>
-                        </svg>
-                    </a>
-                </div>
+                <RedesSociales />
             </div>
         </header>
     )

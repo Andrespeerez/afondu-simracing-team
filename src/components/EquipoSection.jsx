@@ -10,7 +10,7 @@ export default function EquipoSection() {
           >
             NUESTRO EQUIPO
           </h2>
-          <section className='grid grid-cols-1 lg:grid-cols-2 py-20 gap-30 lg:w-5/6 w-full'>
+          <section className='grid grid-cols-1 lg:grid-cols-2 py-20 gap-30 2xl:w-4/6 lg:w-5/6 w-full'>
 
             <section
             className='text-2xl span-1 flex flex-col gap-15'
