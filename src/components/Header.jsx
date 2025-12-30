@@ -2,7 +2,7 @@ export default function Header () {
     return (
         <header className="p-10 py-[10px] fixed w-full flex justify-around items-center bg-black border-b-1 border-[#222222]">
             <a href="/" className="flex items-center">
-                <img src="/public/logo-afondu.webp" alt="Logo de Afondu" 
+                <img src="/logo-afondu.webp" alt="Logo de Afondu" 
                 className="rounded-full" width="80" height="80" />
             </a>
             
@@ -26,16 +26,22 @@ export default function Header () {
                         MEDIA
                     </a>
                 </div>
+                <div>
+                    <a href="#patrocinadores"
+                    className="text-lg hover:text-red-500">
+                        PATROCINADORES
+                    </a>
+                </div>
             </nav>
 
             <div className="flex gap-8 items-center justify-between">
                 <button
-                className="border border-red-500 text-red-500 p-3 rounded-md font-bold text-lg hover:bg-red-500 hover:text-slate-900 transition">
+                className="border border-red-500 text-red-500 p-3 rounded-md font-bold text-lg hover:bg-red-500 hover:text-slate-900 transition hover:scale-105">
                     CONTACTO
                 </button>
                 <div className="flex gap-5 items-center justify-between text-slate-600">
                     <a href=""
-                    className="hover:text-slate-400"
+                    className="hover:text-slate-400 hover:scale-105"
                     target="_blank"
                     >
                         <svg width="40px" viewBox="0 -28.5 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg"  preserveAspectRatio="xMidYMid">
@@ -46,7 +52,7 @@ export default function Header () {
                         </svg>  
                     </a>
                     <a href="https://www.instagram.com/afondu_simracing/"
-                    className="hover:text-slate-400"
+                    className="hover:text-slate-400 hover:scale-105"
                     target="_blank"
                     >
                         <svg width="40px" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">

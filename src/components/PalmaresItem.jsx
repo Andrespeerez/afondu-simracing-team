@@ -1,10 +1,18 @@
-export default function PalmaresItem({titulo, anyos}) {
+export default function PalmaresItem({titulo, anyos, img}) {
     return(
         <article
-        className="bg-slate-400 h-25 rounded-3xl p-5 border-3 border-red-500"
+        className="rounded-3xl p-5 bg-[#111111] hover:bg-slate-700 transition hover:scale-105 duration-500 h-70 shadow-xl flex flex-col justify-between items-center "
         >
-            <h3>{titulo}</h3>
-            <p>{anyos}</p>
+            <img src={img} alt="" 
+            loading="lazy"
+            />
+
+            <div className="flex flex-col justify-center text-center">
+               <h3
+               className=""
+               >{titulo}</h3>
+               <p>{anyos}</p> 
+            </div>
         </article>
     )
 }
