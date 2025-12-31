@@ -20,6 +20,7 @@ export default function Gallery() {
         onSwipedLeft: () => nextPicture(),
         onSwipedRight: () => prevPicture(),
         trackMouse: true,
+        preventScrollOnSwipe: true,
     })
   
 
@@ -28,7 +29,7 @@ export default function Gallery() {
     }
 
     function prevPicture () {
-        setSelectedIndex((currentIndex) => (currentIndex - 1) % galeriaList.length)
+        setSelectedIndex((currentIndex) => (currentIndex - 1 + galeriaList.length) % galeriaList.length)
     }
     
     return (
@@ -71,14 +72,18 @@ export default function Gallery() {
             className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50 gap-30 text-8xl text-gray-500"
             {...handlers}
             >
-                <button className="absolute top-30 right-5 text-white/70 hover:text-white cursor-pointer"
+                <div className="absolute inset-0" onClick={() => setSelectedIndex(null)} />
+
+                <button 
+                className="absolute top-10 right-5 text-white/70 hover:text-white cursor-pointer z-50 sm:hidden"
                 onClick={() => setSelectedIndex(null)}
                 >
                     <X size={60} />
                 </button>
 
-                <button className="absolute left-4 p-2 text-white/50 hover:text-white hover:bg-white/10 rounded-full transition-all hidden md:block cursor-pointer"
-                onClick={prevPicture}
+                <button 
+                className="absolute left-4 p-2 text-white/50 hover:text-white hover:bg-white/10 rounded-full transition-all z-50 cursor-pointer hidden sm:block"
+                onClick={(e) => { e.stopPropagation(); prevPicture();} }
                 >
                     <ChevronLeft size={60} />
                 </button>
@@ -94,8 +99,9 @@ export default function Gallery() {
                     </span>
                 </div>
 
-                <button className="absolute right-4 p-2 text-white/50 hover:text-white hover:bg-white/10 rounded-full transition-all hidden md:block cursor-pointer"
-                onClick={nextPicture}
+                <button 
+                className="absolute right-4 p-2 text-white/50 hover:text-white hover:bg-white/10 rounded-full transition-all z-50 cursor-pointer hidden sm:block"
+                onClick={(e) => { e.stopPropagation(); nextPicture();}}
                 >
                     <ChevronRight size={60} />
                 </button>

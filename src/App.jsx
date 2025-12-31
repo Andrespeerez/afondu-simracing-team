@@ -9,14 +9,14 @@ export default function App() {
     <div className="flex flex-col text-slate-100">
       <Header />
 
-      <main className=''>
+      <main className='relative'>
         <BannerSection /> 
      
         <EquipoSection />
         
         <MediaSection />
 
-        
+
       </main>
 
     </div>
