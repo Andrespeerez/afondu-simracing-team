@@ -1,9 +1,9 @@
-export default function PalmaresItem({titulo, anyos, img}) {
+export default function PalmaresItem({titulo, anyos, img, alt}) {
     return(
         <article
         className="rounded-3xl p-8 bg-[#111111] hover:bg-slate-700 transition hover:scale-105 duration-500 h-70 shadow-xl flex flex-col justify-between items-center "
         >
-            <img src={img} alt="" 
+            <img src={img} alt={alt} 
             loading="lazy"
             />
 
