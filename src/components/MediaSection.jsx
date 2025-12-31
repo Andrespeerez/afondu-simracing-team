@@ -24,6 +24,7 @@ export default function MediaSection() {
     return (
         <section id="media"
         className='2xl:p-10 py-30 px-10 flex flex-col items-center gap-20 bg-black justify-center shadow-2xl'
+        aria-label="Multimedia"
         >
             <h2
             className='text-5xl border-b-2 border-red-500 pb-3 tracking-widest'

@@ -1,7 +1,7 @@
-export default function GalleryItem({ src, onClick }) {
+export default function GalleryItem({ src, alt, onClick }) {
     return (
         <article
-        className="size-60 rounded-xl bg-fuchsia-400 cursor-zoom-in aspect-video overflow-hidden group"
+        className="size-60 rounded-xl cursor-zoom-in aspect-video overflow-hidden group"
         >
             <img src={src} alt="" 
             onClick={onClick}

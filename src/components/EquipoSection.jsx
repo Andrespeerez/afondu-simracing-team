@@ -4,6 +4,7 @@ export default function EquipoSection() {
     return (
         <section id="equipo"
         className='2xl:p-10 py-30 px-10 flex flex-col items-center'
+        aria-label='nuestro equipo'
         >
           <h2
           className='text-5xl border-b-2 border-red-500 pb-3 tracking-widest'
@@ -14,6 +15,7 @@ export default function EquipoSection() {
 
             <section
             className='text-2xl span-1 flex flex-col gap-15'
+            aria-label='Quiénes somos'
             >
               <header
               className='flex justify-center gap-10 text-3xl font-semibold items-center'
@@ -30,21 +32,23 @@ export default function EquipoSection() {
               className='leading-relaxed'
               >Para nosotros, la confianza que tenemos como grupo es la base para trabajar mejor en cada tramo. No entendemos la competición como algo individual, sino como un esfuerzo colectivo donde compartir información, reglajes y trazadas es lo que nos hace avanzar.</p>
               <article
-              className='flex flex-col gap-1'
+              className='flex flex-col gap-1 items-center'
+              aria-label='Nuestra actividad'
               >
-                <h3
-                className='text-3xl pb-2 border-b-1 border-red-500 inline'
-                >Nuestra actividad</h3>
+                <h4
+                className='text-3xl pb-2 border-b border-red-500 inline'
+                >Nuestra actividad</h4>
                 <p
                 className='leading-relaxed'
                 >Actualmente, nuestra actividad principal se centra en simuladores como Assetto Corsa, donde aprovechamos la versatilidad de la plataforma para competir en los campeonatos de montaña y rally más exigentes. Es aquí donde hemos consolidado nuestra estructura y donde dedicamos la mayor parte de nuestras horas de entrenamiento.</p>
               </article>
               <article
-              className='flex flex-col gap-1'
+              className='flex flex-col gap-1 items-center'
+              aria-label='Próximos Objetivos: Proyecto 2026'
               >
-                <h3
-                className='text-3xl pb-2 border-b-1 border-red-500'
-                >Próximos objetivos: Proyecto 2026</h3>
+                <h4
+                className='text-3xl pb-2 border-b border-red-500 inline'
+                >Próximos objetivos: Proyecto 2026</h4>
                 <p
                 className='leading-relaxed'
                 >Mirando hacia el futuro cercano, el equipo se encuentra en una fase de expansión. Para la temporada 2026, nos hemos marcado el objetivo de dar el salto a iRacing, afrontando el reto de adaptar nuestra metodología de trabajo a la estructura competitiva de esta plataforma.</p>
