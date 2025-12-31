@@ -10,7 +10,7 @@ export default function Gallery() {
         {src: "/gallery/3.webp", alt: ""},
         {src: "/gallery/5.webp", alt: ""},
         {src: "/gallery/6.webp", alt: ""},
-        {src: "/gallery/7.webp", alt: ""},        
+        {src: "/gallery/7.webp", alt: "Foto grupal de la Quedada 2025"},        
         {src: "/gallery/8.webp", alt: ""},
     ];
 
@@ -34,7 +34,7 @@ export default function Gallery() {
     
     return (
         <section
-        aria-label="Galería de Fotos"
+        aria-label="Galería de Fotos del equipo"
         >
             <header
             className='flex justify-center gap-10 text-3xl font-semibold items-center pb-20'
@@ -70,13 +70,18 @@ export default function Gallery() {
             {selectedIndex !== null && (
             <div
             className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50 gap-30 text-8xl text-gray-500"
+            role="dialog" 
+            aria-modal="true"
+            aria-label="Vista ampliada de la imagen"
             {...handlers}
+
             >
                 <div className="absolute inset-0" onClick={() => setSelectedIndex(null)} />
 
                 <button 
                 className="absolute top-10 right-5 text-white/70 hover:text-white cursor-pointer z-50 sm:hidden"
                 onClick={() => setSelectedIndex(null)}
+                aria-label="Cerrar Galería"
                 >
                     <X size={60} />
                 </button>
@@ -84,6 +89,7 @@ export default function Gallery() {
                 <button 
                 className="absolute left-4 p-2 text-white/50 hover:text-white hover:bg-white/10 rounded-full transition-all z-50 cursor-pointer hidden sm:block"
                 onClick={(e) => { e.stopPropagation(); prevPicture();} }
+                aria-label="Imagen anterior"
                 >
                     <ChevronLeft size={60} />
                 </button>
@@ -94,14 +100,18 @@ export default function Gallery() {
                     alt={galeriaList[selectedIndex].alt}
                     className="rounded-xl max-h-[90vh] object-contain"
                     />
-                    <span className="text-white/50 mt-4 font-light tracking-widest text-sm">
-                        {selectedIndex + 1} / {galeriaList.length}
-                    </span>
+                    <div 
+                    className="text-white/50 mt-4 font-light tracking-widest text-sm"
+                    aria-live="polite"
+                    >
+                        Imagen {selectedIndex + 1} de {galeriaList.length}
+                    </div>
                 </div>
 
                 <button 
                 className="absolute right-4 p-2 text-white/50 hover:text-white hover:bg-white/10 rounded-full transition-all z-50 cursor-pointer hidden sm:block"
                 onClick={(e) => { e.stopPropagation(); nextPicture();}}
+                aria-label="Siguiente Imagen"
                 >
                     <ChevronRight size={60} />
                 </button>
