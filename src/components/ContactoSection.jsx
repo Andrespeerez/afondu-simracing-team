@@ -13,7 +13,7 @@ export default function ContactoSection() {
             <p
             className="lg:text-2xl text-xl leading-relaxed lg:p-30 sm:p-10 p-2 bg-white/20 rounded-2xl"
             >
-                Si quieres unirte al equipo, patrocinarnos o alguna consulta contactanos vía email:
+                Si quieres unirte al equipo, patrocinarnos o tienes alguna consulta puedes contactanos vía email:
                 <span
                 className="block text-red-500 lg:text-5xl text-2xl text-center pt-20"
                 >

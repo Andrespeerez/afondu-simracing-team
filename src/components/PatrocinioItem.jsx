@@ -5,7 +5,8 @@ export default function PatrocinioItem ({ img, title, url = "" }) {
             alt={title} 
             width="240" 
             height="240"
-            className="rounded-2xl aspect-auto object-contain h-full w-full" 
+            className="rounded-2xl aspect-auto object-contain h-full w-full"
+            loading="lazy"
         />
     ) 
 
