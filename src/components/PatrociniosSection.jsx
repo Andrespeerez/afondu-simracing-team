@@ -12,6 +12,7 @@ export default function PatrociniosSection () {
         {img: "/patrocinadores/8_DG.webp", title: "diseño gráfico DG"},
         {img: "/patrocinadores/9_Logo_Piston_Arts_5.webp", title: "diseño gráfico Liston Arts"},
         {img: "/patrocinadores/10_GT2i_Officiel.webp", title: "GT2i - tienda motor sport"},
+        {img: "/patrocinadores/11_Logo_Siller_Madridderally.webp", title: "Canal de Siller", url: "https://www.youtube.com/@madridderally"},
     ];
 
     return (
