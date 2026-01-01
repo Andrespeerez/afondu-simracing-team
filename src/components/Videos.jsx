@@ -42,7 +42,7 @@ export default function Videos() {
         aria-label="Contenido Multimedia"
         >
             <header
-            className='flex justify-center gap-10 text-3xl font-semibold items-center pb-20'
+            className='flex justify-center gap-10 text-2xl sm:text-3xl font-semibold items-center pb-20'
             >
                 <h3
                 className='pb-2 border-b border-red-500'

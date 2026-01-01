@@ -20,7 +20,7 @@ export default function NavDesktop() {
                 </a>
             </div>
             <div>
-                <a href="#patrocinadores"
+                <a href="#patrocinios"
                 className="text-lg hover:text-red-500">
                     PATROCINADORES
                 </a>

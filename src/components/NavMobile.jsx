@@ -11,7 +11,7 @@ export default function NavMobile({ isOpen, toggleMenu }) {
                 <li><a href="#" onClick={toggleMenu}>INICIO</a></li>
                 <li><a href="#equipo" onClick={toggleMenu}>EQUIPO</a></li>
                 <li><a href="#media" onClick={toggleMenu}>MEDIA</a></li>
-                <li><a href="#patrocinadores" onClick={toggleMenu}>PATROCINADORES</a></li>
+                <li><a href="#patrocinios" onClick={toggleMenu}>PATROCINADORES</a></li>
                 <li><a href="#contacto" onClick={toggleMenu}>CONTACTO</a></li>
                 <li 
                 className="p-2"

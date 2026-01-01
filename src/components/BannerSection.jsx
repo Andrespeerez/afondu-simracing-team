@@ -11,7 +11,7 @@ export default function BannerSection() {
           />
 
           <p
-          className='text-slate-200 text-3xl font-semibold text-center'
+          className='text-slate-200 text-3xl sm:text-5xl font-semibold text-center'
           >
             SUBIDAS DE MONTAÑA · RALLY · CIRCUITOS
           </p>

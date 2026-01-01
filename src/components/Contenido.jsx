@@ -7,8 +7,11 @@ export default function Contenido() {
             ] 
         },
         { nombre: "Juan Guardiola", media: [
-                { tipo: "youtube", url: "https://www.youtube.com/@RunningPanda?sub_confirmation=1", desc: "Canal de piloto J. Guardiola" },
-                { tipo: "instagram", url: "https://www.instagram.com/runningpanda106/", desc: "Instagram J. Guardiola" },
+                {tipo: "twitch", url: "https://www.twitch.tv/runningpanda106", desc: "Canal twitch de piloto J. Guardiola" },
+                { tipo: "youtube", url: "https://www.youtube.com/@RunningPanda?sub_confirmation=1", desc: "Canal youtube de piloto J. Guardiola" },
+                { tipo: "instagram", url: "https://www.instagram.com/runningpanda106/", desc: "Canal Instagram de piloto J. Guardiola" },
+
+                
             ]
         },
         { nombre: "Alan Rua", media: [ 
@@ -17,8 +20,29 @@ export default function Contenido() {
                 { tipo: "youtube", url: "https://www.youtube.com/@a.rsimracer7687?sub_confirmation=1", desc: "Canal Youtube de piloto A. Rua" },
             ]
         },
-        { nombre: "Alan Rua", media: [ 
-                { tipo: "youtube", url: "https://www.youtube.com/@a.rsimracer7687?sub_confirmation=1", desc: "Canal de piloto A. Rua" },
+        { nombre: "José Carlos Santos Siller", media: [ 
+                { tipo: "twitch", url: "https://www.twitch.tv/siller_simracing", desc: "Canal Twitch de piloto Siller" },
+                { tipo: "instagram", url: "https://www.instagram.com/siller_simracing/", desc: "Canal Instagram de piloto Siller" },
+                { tipo: "youtube", url: "https://www.youtube.com/@madridderally?sub_confirmation=1", desc: "Canal Youtube de piloto Siller" },
+            ]
+        },
+        { nombre: "Miguel Puig Alonso", media: [ 
+                { tipo: "instagram", url: "https://www.instagram.com/puchi_simracing/", desc: "Canal instagram de piloto Puchi" },
+                { tipo: "youtube", url: "https://www.youtube.com/@puchi_simracing?sub_confirmation=1", desc: "Canal Youtube de piloto Puchi" },
+            ]
+        },
+        { nombre: "Iván Aguado Reoyo", media: [ 
+                { tipo: "instagram", url: "https://www.instagram.com/ivanaguado_rallye/", desc: "Canal instagram de piloto Aguado" },
+            ]
+        },
+        { nombre: "Hector Rivero Santana", media: [ 
+                { tipo: "youtube", url: " https://www.youtube.com/@hectorriverosantana1687?sub_confirmation=1", desc: "Canal youtube de piloto Rivero" },           
+                { tipo: "twitter", url: "https://x.com/hector_rivero94", desc: "Canal twitter de piloto Rivero" },
+            ]
+        },
+        { nombre: "Vicent Escuder Sancho", media: [ 
+                { tipo: "instagram", url: "https://www.instagram.com/escudervicent/", desc: "Canal instagram de piloto Escuder" },
+                { tipo: "twitter", url: "https://x.com/vicentescuder", desc: "Canal twitter de piloto Escuder" },                
             ]
         },
     ];
@@ -53,10 +77,10 @@ export default function Contenido() {
                 );
             case "twitter":
                 return (
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 35 35" id="Twitter-X--Streamline-Bootstrap" height="35" width="35"
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 35 35" height="35" width="35"
                     aria-label="Logo de Twitter"
                     >
-                        <path d="M27.5625 1.640625h5.368125l-11.725000000000001 13.435625L35 33.359375h-10.799687500000001l-8.4590625 -11.090625000000001 -9.6796875 11.090625000000001H0.69125l12.5409375 -14.371875000000001L0 1.640625h11.075312499999999l7.6453125 10.1346875L27.5646875 1.640625Zm-1.8812499999999999 28.49875h2.975L9.4565625 4.6921875H6.2671875z" stroke-width="2.1875">
+                        <path d="M27.5625 1.640625h5.368125l-11.725000000000001 13.435625L35 33.359375h-10.799687500000001l-8.4590625 -11.090625000000001 -9.6796875 11.090625000000001H0.69125l12.5409375 -14.371875000000001L0 1.640625h11.075312499999999l7.6453125 10.1346875L27.5646875 1.640625Zm-1.8812499999999999 28.49875h2.975L9.4565625 4.6921875H6.2671875z" strokeWidth="2.1875">
                     </path>
                     </svg>
                 );
@@ -67,13 +91,13 @@ export default function Contenido() {
 
     return (
         <section
-        className="grid grid-cols-2 gap-10"
+        className="grid grid-cols-1 xl:grid-cols-2 gap-10"
         aria-label="Canales de Contenido de Miembros de Afondu"
         >
             {canales.map((miembro, index) => (
                 <article key={`miembro-${index}`}
                 aria-label={miembro.name + " canales de contenido"}
-                className="flex flex-row justify-between items-center gap-50 bg-white/10 p-5 px-10 rounded-full"
+                className="flex flex-row justify-between items-center  bg-white/10 p-5 px-10 rounded-full"
                 >
                     <div
                     className="text-2xl leading-relaxed tracking-wider font-bold"

@@ -31,12 +31,12 @@ export default function MediaSection() {
         aria-label="Multimedia"
         >
             <h2
-            className='text-5xl border-b-2 border-red-500 pb-3 tracking-widest'
+            className='text-3xl sm:text-5xl border-b-2 border-red-500 pb-3 tracking-widest'
             >
                 MEDIA
             </h2>
 
-            <nav className="flex gap-5 text-3xl font-semibold">
+            <nav className="flex gap-5 text-xl md:text-3xl font-semibold">
                 {sections.map((elem) => (
                     <button
                     className={`cursor-pointer pb-1 border-b-2 ${

@@ -7,7 +7,7 @@ export default function EquipoSection() {
         aria-label='nuestro equipo'
         >
           <h2
-          className='text-5xl border-b-2 border-red-500 pb-3 tracking-widest'
+          className='text-3xl sm:text-5xl border-b-2 border-red-500 pb-3 tracking-widest'
           >
             NUESTRO EQUIPO
           </h2>

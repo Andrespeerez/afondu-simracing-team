@@ -3,6 +3,8 @@ import Header from './components/Header'
 import EquipoSection from './components/EquipoSection'
 import BannerSection from './components/BannerSection'
 import MediaSection from './components/MediaSection'
+import PatrociniosSection from './components/PatrociniosSection'
+import ContactoSection from './components/ContactoSection'
 
 export default function App() {
   return (
@@ -16,6 +18,9 @@ export default function App() {
         
         <MediaSection />
 
+        <PatrociniosSection />
+
+        <ContactoSection />
 
       </main>
 
