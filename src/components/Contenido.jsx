@@ -26,6 +26,10 @@ export default function Contenido() {
                 { tipo: "youtube", url: "https://www.youtube.com/@madridderally?sub_confirmation=1", desc: "Canal Youtube de piloto Siller" },
             ]
         },
+        { nombre: "Arturo Martínez Salvador", media: [ 
+                { tipo: "instagram", url: "https://www.instagram.com/arturo_afondu/", desc: "Canal Instagram de piloto Arturi" },
+            ]
+        },
         { nombre: "Miguel Puig Alonso", media: [ 
                 { tipo: "instagram", url: "https://www.instagram.com/puchi_simracing/", desc: "Canal instagram de piloto Puchi" },
                 { tipo: "youtube", url: "https://www.youtube.com/@puchi_simracing?sub_confirmation=1", desc: "Canal Youtube de piloto Puchi" },
@@ -43,6 +47,10 @@ export default function Contenido() {
         { nombre: "Vicent Escuder Sancho", media: [ 
                 { tipo: "instagram", url: "https://www.instagram.com/escudervicent/", desc: "Canal instagram de piloto Escuder" },
                 { tipo: "twitter", url: "https://x.com/vicentescuder", desc: "Canal twitter de piloto Escuder" },                
+            ]
+        },
+        { nombre: "Pablo Alonso Suárez", media: [ 
+                { tipo: "instagram", url: "https://www.instagram.com/pablo_alonsoo22/", desc: "Canal instagram de piloto Pablo" },       
             ]
         },
     ];

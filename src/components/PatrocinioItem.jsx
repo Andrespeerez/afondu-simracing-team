@@ -18,7 +18,12 @@ export default function PatrocinioItem ({ img, title, url = "" }) {
             className={ url != "" ? classNameDefault + classNameEnlace : classNameDefault}
         >
             {url !== "" ? (
-                <a href={url} target="_blank" rel="noopener noreferrer" className="w-full h-full">
+                <a href={url} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="w-full h-full"
+                aria-label={title}
+                >
                     {Imagen}
                 </a>
             ) : (

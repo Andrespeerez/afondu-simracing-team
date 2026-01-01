@@ -8,7 +8,7 @@ export default function PatrociniosSection () {
         {img: "/patrocinadores/4_ar_blanco.webp", title: "AR photo racing"},
         {img: "/patrocinadores/5_joval_logo__letras_hor.webp", title: "joval"},
         {img: "/patrocinadores/6_Totalitym-Blanco-1024x155.webp", title: "totalitym - camisetas e-sports"},
-        {img: "/patrocinadores/7_logo-instant-gaming.webp", title: "", url: "https://www.instant-gaming.com/?igr=afondusimracing"},
+        {img: "/patrocinadores/7_logo-instant-gaming.webp", title: "Instant Gaming - Juegos al Mejor precio", url: "https://www.instant-gaming.com/?igr=afondusimracing"},
         {img: "/patrocinadores/8_DG.webp", title: "diseño gráfico DG"},
         {img: "/patrocinadores/9_Logo_Piston_Arts_5.webp", title: "diseño gráfico Liston Arts"},
         {img: "/patrocinadores/10_GT2i_Officiel.webp", title: "GT2i - tienda motor sport"},
