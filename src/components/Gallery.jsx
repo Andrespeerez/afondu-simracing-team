@@ -5,13 +5,13 @@ import GalleryItem from "./GalleryItem";
 
 export default function Gallery() {
     const galeriaList = [
-        {src: "/gallery/1.webp", alt: ""},
-        {src: "/gallery/2.webp", alt: ""},
-        {src: "/gallery/3.webp", alt: ""},
-        {src: "/gallery/5.webp", alt: ""},
-        {src: "/gallery/6.webp", alt: ""},
-        {src: "/gallery/7.webp", alt: "Foto grupal de la Quedada 2025"},        
-        {src: "/gallery/8.webp", alt: ""},
+        {src: "/gallery/1.webp", alt: "Siller N5 SCERv"},
+        {src: "/gallery/2.webp", alt: "M3 en tierra"},
+        {src: "/gallery/3.webp", alt: "CM en Chandata"},
+        {src: "/gallery/5.webp", alt: "GT3 Hill Climb"},
+        {src: "/gallery/6.webp", alt: "Drift Spain"},
+        {src: "/gallery/7.webp", alt: "Quedada Afondu 2025 en Teruel"},        
+        {src: "/gallery/8.webp", alt: "Quedanda Afundo de lo Virtual a lo Real"},
     ];
 
     const [selectedIndex, setSelectedIndex] = useState(null);
@@ -73,13 +73,11 @@ export default function Gallery() {
             role="dialog" 
             aria-modal="true"
             aria-label="Vista ampliada de la imagen"
-            {...handlers}
-
-            >
+            {...handlers}>
                 <div className="absolute inset-0" onClick={() => setSelectedIndex(null)} />
 
                 <button 
-                className="absolute top-10 right-5 text-white/70 hover:text-white cursor-pointer z-50 sm:hidden"
+                className="absolute top-30 right-5 text-white/70 hover:text-white cursor-pointer z-50 sm:hidden"
                 onClick={() => setSelectedIndex(null)}
                 aria-label="Cerrar Galería"
                 >

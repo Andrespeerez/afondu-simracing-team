@@ -1,19 +1,23 @@
 import { useState } from "react";
-import Contenido from "./Contenido";
+import Videos from "./Videos";
 import Gallery from "./Gallery";
+import Contenido from "./Contenido";
 
 export default function MediaSection() {
     const [active, setActive] = useState("galeria");
 
     const sections = [
         { name: "GALERÍA", key: "galeria" },
-        { name: "CONTENIDO", key: "contenido" },
+        { name: "VIDEOS", key: "videos" },
+        { name: "CONTENIDO", key: "contenido"}
     ];
 
     function renderizarSeccion() {
         switch (active) {
             case "galeria":
                 return <Gallery />;
+            case "videos":
+                return <Videos />
             case "contenido":
                 return <Contenido />
             default:

@@ -1,7 +1,7 @@
 export default function BannerSection() {
     return (
         <section
-        className='flex items-center flex-col gap-20 bg-black min-h-[calc(100dvh-100px)] justify-center shadow-2xl'
+        className='flex items-center flex-col gap-20 bg-black min-h-[calc(100dvh-100px)] justify-center shadow-2xl py-10'
         aria-label="Presentación del Equipo"
         >
           <img src="/log_casco_relieve_negro.webp" alt="Logo Equipo Afondu" 
