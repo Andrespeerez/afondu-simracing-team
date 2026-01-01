@@ -14,8 +14,8 @@ export default function Header () {
             <a href="/" className="flex items-center"
             aria-label="Al Inicio"
             >
-                <img src="/logo-afondu.webp" alt="Logo de Afondu" 
-                className="rounded-full" width="80" height="80" />
+                <img src="/casco_no_fondo_letras.webp" alt="Logo de Afondu" 
+                className="rounded-full p-1.25" width="75" height="75" />
             </a>
 
             <button
