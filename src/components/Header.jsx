@@ -35,10 +35,11 @@ export default function Header () {
             <NavMobile isOpen={isOpen} toggleMenu={toggleMenu} />
             
             <div className="hidden lg:flex gap-8 items-center justify-between">
-                <button
+                <a
+                href="#contacto"
                 className="border border-red-500 text-red-500 p-3 rounded-md font-bold text-lg hover:bg-red-500 hover:text-slate-900 transition hover:scale-105">
                     CONTACTO
-                </button>
+                </a>
                 <RedesSociales />
             </div>
         </header>
