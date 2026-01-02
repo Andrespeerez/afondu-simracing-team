@@ -11,11 +11,11 @@ export default function ContactoSection() {
             </h2>
 
             <p
-            className="lg:text-2xl text-xl leading-relaxed lg:p-30 sm:p-10 p-2 bg-white/20 rounded-2xl"
+            className="lg:text-2xl text-xl leading-relaxed lg:p-30 p-10 -m-10 bg-white/20 rounded-2xl"
             >
                 Si quieres unirte al equipo, patrocinarnos o tienes alguna consulta puedes contactanos vía email:
                 <span
-                className="block text-red-500 lg:text-5xl text-2xl text-center pt-20"
+                className="block text-red-500 lg:text-3xl text-xl text-center pt-20"
                 >
                     afondusimracing@gmail.com
                 </span>

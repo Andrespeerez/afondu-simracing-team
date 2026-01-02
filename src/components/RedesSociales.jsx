@@ -1,6 +1,6 @@
 export default function RedesSociales() {
     return (
-        <div className="flex gap-5 items-center justify-between text-slate-600">
+        <div className="flex gap-5 items-center justify-evenly text-slate-600">
             <a href="https://discord.gg/KX6WnchZ9r"
             className="hover:text-slate-400 hover:scale-105"
             target="_blank"

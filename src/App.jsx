@@ -5,6 +5,7 @@ import BannerSection from './components/BannerSection'
 import MediaSection from './components/MediaSection'
 import PatrociniosSection from './components/PatrociniosSection'
 import ContactoSection from './components/ContactoSection'
+import Footer from './components/Footer'
 
 export default function App() {
   return (
@@ -21,6 +22,8 @@ export default function App() {
         <PatrociniosSection />
 
         <ContactoSection />
+
+        <Footer />
 
       </main>
 

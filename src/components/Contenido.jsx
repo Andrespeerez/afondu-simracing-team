@@ -105,7 +105,7 @@ export default function Contenido() {
             {canales.map((miembro, index) => (
                 <article key={`miembro-${index}`}
                 aria-label={miembro.name + " canales de contenido"}
-                className="flex flex-row justify-between items-center  bg-white/10 p-5 px-10 rounded-full"
+                className="flex md:flex-row gap-10 flex-col justify-between items-center  bg-white/10 p-5 px-10 rounded-4xl"
                 >
                     <div
                     className="text-2xl leading-relaxed tracking-wider font-bold"
@@ -118,6 +118,7 @@ export default function Contenido() {
                                 aria-label={red.desc}
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                className="hover:scale-115 active:scale-95"
                             >
                                 {handleTipo(red.tipo)}
                             </a>
