@@ -11,7 +11,7 @@ export default function ContactoSection() {
             </h2>
 
             <p
-            className="lg:text-2xl text-xl leading-relaxed lg:p-30 p-10 -m-10 bg-white/20 rounded-2xl"
+            className="lg:text-2xl text-xl leading-relaxed lg:p-20 md:p-10 p-5 -mx-10 bg-white/20 rounded-2xl"
             >
                 Si quieres unirte al equipo, patrocinarnos o tienes alguna consulta puedes contactanos vía email:
                 <span

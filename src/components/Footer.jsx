@@ -14,7 +14,7 @@ export default function Footer() {
                 className="pb-20"
                 >
                     <h3
-                    className="text-red-500 text-2xl mb-10"
+                    className="text-red-500 text-2xl mb-10 tracking-widest"
                     >
                         AFUNDU SIMRACING
                     </h3>
@@ -28,7 +28,7 @@ export default function Footer() {
                 className="pb-20"
                 >
                     <h3
-                    className="text-red-500 text-2xl mb-10"
+                    className="text-red-500 text-2xl mb-10 tracking-widest"
                     >
                         NAVEGACIÓN
                     </h3>
@@ -37,19 +37,19 @@ export default function Footer() {
                         className="flex flex-col gap-4 text-xl"
                         >
                             <li>
-                                <a href="#" className="hover:text-red-500">INICIO</a>
+                                <a href="#" className="hover:text-red-500 tracking-widest">INICIO</a>
                             </li>
                             <li>
-                                <a href="#equipo" className="hover:text-red-500">EQUIPO</a>
+                                <a href="#equipo" className="hover:text-red-500 tracking-widest">EQUIPO</a>
                             </li>
                             <li>
-                                <a href="#media" className="hover:text-red-500">MEDIA</a>
+                                <a href="#media" className="hover:text-red-500 tracking-widest">MEDIA</a>
                             </li>
                             <li>
-                                <a href="#patrocinios" className="hover:text-red-500">PATROCINIOS</a>
+                                <a href="#patrocinios" className="hover:text-red-500 tracking-widest">PATROCINIOS</a>
                             </li>
                             <li>
-                                <a href="#contacto" className="hover:text-red-500">CONTACTO</a>
+                                <a href="#contacto" className="hover:text-red-500 tracking-widest">CONTACTO</a>
                             </li>
                         </ul>
                     </nav>
@@ -58,18 +58,18 @@ export default function Footer() {
                 className="pb-20"
                 >
                     <h3
-                    className="text-red-500 text-2xl mb-10"
+                    className="text-red-500 text-2xl mb-10 tracking-widest"
                     >
                         REDES SOCIALES
                     </h3>
                     <div
-                    className="flex justify-center pb-10"
+                    className="flex justify-center pb-10 border-b border-white/15"
                     >
                         <RedesSociales />
                     </div>
 
                     <p
-                    className="text-xl hover:text-red-500"
+                    className="text-xl hover:text-red-500 pt-10"
                     >
                         afondusimracing@gmail.com
                     </p>
